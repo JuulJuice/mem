@@ -13,6 +13,7 @@
 		2747A7142768D3600036BD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2747A7122768D3600036BD18 /* Main.storyboard */; };
 		2747A7162768D3630036BD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2747A7152768D3630036BD18 /* Assets.xcassets */; };
 		2747A7192768D3630036BD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2747A7172768D3630036BD18 /* LaunchScreen.storyboard */; };
+		2747A7212768DB380036BD18 /* CaptionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2747A7202768DB380036BD18 /* CaptionOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2747A7152768D3630036BD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2747A7182768D3630036BD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2747A71A2768D3630036BD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2747A7202768DB380036BD18 /* CaptionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2747A70C2768D3600036BD18 /* AppDelegate.swift */,
 				2747A70E2768D3600036BD18 /* SceneDelegate.swift */,
 				2747A7102768D3600036BD18 /* ViewController.swift */,
+				2747A7202768DB380036BD18 /* CaptionOption.swift */,
 				2747A7122768D3600036BD18 /* Main.storyboard */,
 				2747A7152768D3630036BD18 /* Assets.xcassets */,
 				2747A7172768D3630036BD18 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2747A7112768D3600036BD18 /* ViewController.swift in Sources */,
+				2747A7212768DB380036BD18 /* CaptionOption.swift in Sources */,
 				2747A70D2768D3600036BD18 /* AppDelegate.swift in Sources */,
 				2747A70F2768D3600036BD18 /* SceneDelegate.swift in Sources */,
 			);
