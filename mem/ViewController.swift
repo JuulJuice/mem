@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     var topChoices:[CaptionOption] = [CaptionOption(emoji: "🕶", caption: "You know what's cool?"), CaptionOption(emoji: "💥", caption: "You know what makes me mad?"), CaptionOption(emoji: "💕", caption: "You know what I love?")]
     
     var bottomChoices:[CaptionOption] = [CaptionOption(emoji: "🐱", caption: "Cats wearing hats"), CaptionOption(emoji: "🐕", caption: "Dogs carrying logs"), CaptionOption(emoji: "🐒", caption: "Monkeys being funky")]
-    
+
     @IBOutlet weak var topCaptionLabel: UILabel!
     @IBOutlet weak var bottomCaptionLabel: UILabel!
     
@@ -51,5 +51,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomSegmentedControl: UISegmentedControl!
     
     
+    @IBAction func topDragLabel(_ sender: UIPanGestureRecognizer) {
+        if sender.state == .changed {
+                topCaptionLabel.center = sender.location(in: view)
+    }
+    
+    }
+    
+    @IBAction func bottomDragLabel(_ sender: UIPanGestureRecognizer) {
+        if sender.state == .changed {
+                bottomCaptionLabel.center = sender.location(in: view)
 }
-
+    }
+}
