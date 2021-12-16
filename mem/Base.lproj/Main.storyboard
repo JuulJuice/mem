@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-oU-biN">
-                                <rect key="frame" x="32" y="256" width="351" height="248"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="owo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="8PJ-a9-9yc">
-                                <rect key="frame" x="32" y="427.5" width="350" height="41"/>
-                                <gestureRecognizers/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-oU-biN">
+                                <rect key="frame" x="0.0" y="256" width="414" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="Afu-le-2Ww"/>
+                                    <constraint firstAttribute="height" constant="250" id="Ho5-6B-KnH"/>
                                 </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="owo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="8PJ-a9-9yc">
+                                <rect key="frame" x="0.0" y="377" width="414" height="142"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -35,10 +35,7 @@
                                 </connections>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nn4-92-Pn8">
-                                <rect key="frame" x="156" y="217" width="103" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="HG0-tP-Qs3"/>
-                                </constraints>
+                                <rect key="frame" x="50" y="211.5" width="314" height="32"/>
                                 <segments>
                                     <segment title="🕶"/>
                                     <segment title="💥"/>
@@ -49,7 +46,7 @@
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AN9-Z7-n5s">
-                                <rect key="frame" x="145" y="516.5" width="113" height="32.5"/>
+                                <rect key="frame" x="145" y="519" width="219" height="32"/>
                                 <segments>
                                     <segment title="🐱"/>
                                     <segment title="🐕"/>
@@ -59,11 +56,11 @@
                                     <action selector="options:" destination="BYZ-38-t0r" eventType="valueChanged" id="7hN-2c-JGY"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uwu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iot-NO-kXv">
-                                <rect key="frame" x="32" y="285" width="350" height="41"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uwu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iot-NO-kXv">
+                                <rect key="frame" x="0.0" y="279.5" width="414" height="41"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="MC8-Nn-B0E"/>
+                                    <constraint firstAttribute="height" constant="41" id="kBB-m6-VgM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,23 +75,31 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AN9-Z7-n5s" firstAttribute="top" secondItem="8PJ-a9-9yc" secondAttribute="bottom" constant="48" id="1fn-4F-sWl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AN9-Z7-n5s" secondAttribute="trailing" constant="156" id="2wB-fM-WQT"/>
-                            <constraint firstItem="iot-NO-kXv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="3Ak-ii-F9Q"/>
-                            <constraint firstItem="8PJ-a9-9yc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Xn-sT-Eba"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iot-NO-kXv" secondAttribute="trailing" constant="32" id="6HJ-Wx-Lt1"/>
-                            <constraint firstItem="Nn4-92-Pn8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="6Sb-Ks-0K8"/>
-                            <constraint firstItem="Nn4-92-Pn8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="DYf-U4-fKY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AN9-Z7-n5s" secondAttribute="trailing" constant="156" id="Mya-Ng-AAU"/>
-                            <constraint firstItem="AN9-Z7-n5s" firstAttribute="top" secondItem="KWe-oU-biN" secondAttribute="bottom" constant="13" id="P19-gy-p2e"/>
-                            <constraint firstItem="8PJ-a9-9yc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="S3b-df-ZES"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AN9-Z7-n5s" secondAttribute="bottom" constant="314" id="VzR-wq-wjF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nn4-92-Pn8" secondAttribute="trailing" constant="155" id="Zq0-A9-6HP"/>
-                            <constraint firstItem="KWe-oU-biN" firstAttribute="top" secondItem="Nn4-92-Pn8" secondAttribute="bottom" constant="8" symbolic="YES" id="dV5-wU-edD"/>
-                            <constraint firstItem="8PJ-a9-9yc" firstAttribute="leading" secondItem="KWe-oU-biN" secondAttribute="leading" id="mmR-Cg-s6F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8PJ-a9-9yc" secondAttribute="trailing" constant="32" id="rtw-w3-y4S"/>
-                            <constraint firstItem="iot-NO-kXv" firstAttribute="top" secondItem="Nn4-92-Pn8" secondAttribute="bottom" constant="37" id="wRQ-4q-Ip3"/>
-                            <constraint firstItem="8PJ-a9-9yc" firstAttribute="centerX" secondItem="KWe-oU-biN" secondAttribute="centerX" id="ynV-7f-m3c"/>
+                            <constraint firstItem="AN9-Z7-n5s" firstAttribute="top" secondItem="KWe-oU-biN" secondAttribute="bottom" constant="13" id="6ll-Q3-CHV">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AN9-Z7-n5s" secondAttribute="trailing" constant="50" id="FC1-qy-6jv"/>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="256" id="QhN-Ev-bnJ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="75"/>
+                            </constraint>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="centerX" secondItem="Nn4-92-Pn8" secondAttribute="centerX" id="RvP-6n-9eD"/>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="trailing" secondItem="iot-NO-kXv" secondAttribute="trailing" id="UVr-Qa-6QE"/>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="centerX" secondItem="8PJ-a9-9yc" secondAttribute="centerX" id="Uot-0C-EvJ"/>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="leading" secondItem="8PJ-a9-9yc" secondAttribute="leading" id="a76-1d-L2E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AN9-Z7-n5s" secondAttribute="trailing" symbolic="YES" id="aQ6-ZB-8qQ"/>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bWk-zU-1U4"/>
+                            <constraint firstItem="iot-NO-kXv" firstAttribute="top" secondItem="Nn4-92-Pn8" secondAttribute="bottom" constant="37" id="fKs-SE-0TY"/>
+                            <constraint firstItem="AN9-Z7-n5s" firstAttribute="top" secondItem="8PJ-a9-9yc" secondAttribute="bottom" id="gMu-YA-kjT"/>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="top" secondItem="Nn4-92-Pn8" secondAttribute="bottom" constant="13.5" id="gh6-FR-Jac"/>
+                            <constraint firstItem="8PJ-a9-9yc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jhf-3q-cHQ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="65"/>
+                            </constraint>
+                            <constraint firstItem="Nn4-92-Pn8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="l74-QJ-9RX"/>
+                            <constraint firstItem="AN9-Z7-n5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="oI5-J3-XP5">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="KWe-oU-biN" firstAttribute="leading" secondItem="iot-NO-kXv" secondAttribute="leading" id="oeO-3T-NO0"/>
+                            <constraint firstAttribute="trailing" secondItem="KWe-oU-biN" secondAttribute="trailing" id="u2z-Nq-5W4"/>
                         </constraints>
                     </view>
                     <connections>
